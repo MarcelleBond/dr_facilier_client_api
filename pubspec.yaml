@@ -3,7 +3,7 @@
 #
 
 name: 'dr_facilier'
-version: '1.0.0'
+version: '1.0.1'
 description: 'DrFacilier API'
 homepage: 'homepage'
 environment:
