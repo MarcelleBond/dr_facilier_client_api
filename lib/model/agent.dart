@@ -19,6 +19,7 @@ class Agent {
     this.tmStamp,
     this.platformList = const [],
     this.ipAddressId,
+    this.ipAddress,
   });
 
   ///
@@ -51,6 +52,14 @@ class Agent {
   ///
   num? ipAddressId;
 
+  ///
+  /// Please note: This property should have been non-nullable! Since the specification file
+  /// does not include a default value (using the "default:" property), however, the generated
+  /// source code must fall back to having a nullable type.
+  /// Consider adding a "default:" property in the specification file to hide this note.
+  ///
+  String? ipAddress;
+
   @override
   bool operator ==(Object other) => identical(this, other) || other is Agent &&
     other.agentID == agentID &&
@@ -58,7 +67,8 @@ class Agent {
     other.passwd == passwd &&
     other.tmStamp == tmStamp &&
     _deepEquality.equals(other.platformList, platformList) &&
-    other.ipAddressId == ipAddressId;
+    other.ipAddressId == ipAddressId &&
+    other.ipAddress == ipAddress;
 
   @override
   int get hashCode =>
@@ -68,10 +78,11 @@ class Agent {
     (passwd.hashCode) +
     (tmStamp == null ? 0 : tmStamp!.hashCode) +
     (platformList.hashCode) +
-    (ipAddressId == null ? 0 : ipAddressId!.hashCode);
+    (ipAddressId == null ? 0 : ipAddressId!.hashCode) +
+    (ipAddress == null ? 0 : ipAddress!.hashCode);
 
   @override
-  String toString() => 'Agent[agentID=$agentID, email=$email, passwd=$passwd, tmStamp=$tmStamp, platformList=$platformList, ipAddressId=$ipAddressId]';
+  String toString() => 'Agent[agentID=$agentID, email=$email, passwd=$passwd, tmStamp=$tmStamp, platformList=$platformList, ipAddressId=$ipAddressId, ipAddress=$ipAddress]';
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
@@ -92,6 +103,11 @@ class Agent {
       json[r'ipAddressId'] = this.ipAddressId;
     } else {
       json[r'ipAddressId'] = null;
+    }
+    if (this.ipAddress != null) {
+      json[r'ipAddress'] = this.ipAddress;
+    } else {
+      json[r'ipAddress'] = null;
     }
     return json;
   }
@@ -123,6 +139,7 @@ class Agent {
             ? (json[r'platformList'] as Iterable).cast<String>().toList(growable: false)
             : const [],
         ipAddressId: num.parse('${json[r'ipAddressId']}'),
+        ipAddress: mapValueOfType<String>(json, r'ipAddress'),
       );
     }
     return null;
