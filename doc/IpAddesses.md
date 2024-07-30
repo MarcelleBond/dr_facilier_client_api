@@ -8,8 +8,8 @@ import 'package:dr_facilier/api.dart';
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ipAddressID** | **num** |  | [optional] 
-**ipAddress** | [**Object**](.md) |  | [optional] 
+**ipAddressID** | **int** |  | [optional] 
+**ipAddress** | **String** |  | [optional] 
 **friendlyName** | **String** |  | [optional] 
 **username** | **String** |  | [optional] 
 **password** | **String** |  | [optional] 

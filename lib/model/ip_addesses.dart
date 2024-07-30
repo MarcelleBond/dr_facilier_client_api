@@ -26,7 +26,7 @@ class IpAddesses {
   /// source code must fall back to having a nullable type.
   /// Consider adding a "default:" property in the specification file to hide this note.
   ///
-  num? ipAddressID;
+  int? ipAddressID;
 
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
@@ -34,7 +34,7 @@ class IpAddesses {
   /// source code must fall back to having a nullable type.
   /// Consider adding a "default:" property in the specification file to hide this note.
   ///
-  Object? ipAddress;
+  String? ipAddress;
 
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
@@ -129,8 +129,8 @@ class IpAddesses {
       }());
 
       return IpAddesses(
-        ipAddressID: num.parse('${json[r'ipAddressID']}'),
-        ipAddress: mapValueOfType<Object>(json, r'ipAddress'),
+        ipAddressID: mapValueOfType<int>(json, r'ipAddressID'),
+        ipAddress: mapValueOfType<String>(json, r'ipAddress'),
         friendlyName: mapValueOfType<String>(json, r'friendlyName'),
         username: mapValueOfType<String>(json, r'username'),
         password: mapValueOfType<String>(json, r'password'),

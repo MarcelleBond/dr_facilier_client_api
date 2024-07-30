@@ -63,5 +63,3 @@ lib/model/unauthorized_error.dart
 lib/model/user.dart
 lib/model/user_input.dart
 pubspec.yaml
-test/ip_addesses_test.dart
-test/ipaddress_api_test.dart
