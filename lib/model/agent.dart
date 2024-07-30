@@ -18,7 +18,7 @@ class Agent {
     required this.passwd,
     this.tmStamp,
     this.platformList = const [],
-    this.ipAddress,
+    this.ipAddressId,
   });
 
   ///
@@ -49,7 +49,7 @@ class Agent {
   /// source code must fall back to having a nullable type.
   /// Consider adding a "default:" property in the specification file to hide this note.
   ///
-  String? ipAddress;
+  num? ipAddressId;
 
   @override
   bool operator ==(Object other) => identical(this, other) || other is Agent &&
@@ -58,7 +58,7 @@ class Agent {
     other.passwd == passwd &&
     other.tmStamp == tmStamp &&
     _deepEquality.equals(other.platformList, platformList) &&
-    other.ipAddress == ipAddress;
+    other.ipAddressId == ipAddressId;
 
   @override
   int get hashCode =>
@@ -68,10 +68,10 @@ class Agent {
     (passwd.hashCode) +
     (tmStamp == null ? 0 : tmStamp!.hashCode) +
     (platformList.hashCode) +
-    (ipAddress == null ? 0 : ipAddress!.hashCode);
+    (ipAddressId == null ? 0 : ipAddressId!.hashCode);
 
   @override
-  String toString() => 'Agent[agentID=$agentID, email=$email, passwd=$passwd, tmStamp=$tmStamp, platformList=$platformList, ipAddress=$ipAddress]';
+  String toString() => 'Agent[agentID=$agentID, email=$email, passwd=$passwd, tmStamp=$tmStamp, platformList=$platformList, ipAddressId=$ipAddressId]';
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
@@ -88,10 +88,10 @@ class Agent {
       json[r'tmStamp'] = null;
     }
       json[r'platformList'] = this.platformList;
-    if (this.ipAddress != null) {
-      json[r'ipAddress'] = this.ipAddress;
+    if (this.ipAddressId != null) {
+      json[r'ipAddressId'] = this.ipAddressId;
     } else {
-      json[r'ipAddress'] = null;
+      json[r'ipAddressId'] = null;
     }
     return json;
   }
@@ -122,7 +122,7 @@ class Agent {
         platformList: json[r'platformList'] is Iterable
             ? (json[r'platformList'] as Iterable).cast<String>().toList(growable: false)
             : const [],
-        ipAddress: mapValueOfType<String>(json, r'ipAddress'),
+        ipAddressId: num.parse('${json[r'ipAddressId']}'),
       );
     }
     return null;
