@@ -50,7 +50,7 @@ class Agent {
   /// source code must fall back to having a nullable type.
   /// Consider adding a "default:" property in the specification file to hide this note.
   ///
-  num? ipAddressId;
+  int? ipAddressId;
 
   ///
   /// Please note: This property should have been non-nullable! Since the specification file
@@ -138,7 +138,7 @@ class Agent {
         platformList: json[r'platformList'] is Iterable
             ? (json[r'platformList'] as Iterable).cast<String>().toList(growable: false)
             : const [],
-        ipAddressId: num.parse('${json[r'ipAddressId']}'),
+        ipAddressId: mapValueOfType<int>(json, r'ipAddressId'),
         ipAddress: mapValueOfType<String>(json, r'ipAddress'),
       );
     }

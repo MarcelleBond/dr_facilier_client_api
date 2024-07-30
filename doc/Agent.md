@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **passwd** | **String** |  | 
 **tmStamp** | [**DateTime**](DateTime.md) |  | [optional] 
 **platformList** | **List<String>** |  | [default to const []]
-**ipAddressId** | **num** |  | [optional] 
+**ipAddressId** | **int** |  | [optional] 
 **ipAddress** | **String** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
