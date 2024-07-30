@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 analysis_options.yaml
@@ -7,6 +6,8 @@ doc/Agent.md
 doc/AgentsApi.md
 doc/BadRequestError.md
 doc/ConflictError.md
+doc/GetHealth200Response.md
+doc/HealthApi.md
 doc/InternalServerError.md
 doc/JWTToken.md
 doc/LoginInput.md
@@ -27,6 +28,7 @@ doc/UsersApi.md
 git_push.sh
 lib/api.dart
 lib/api/agents_api.dart
+lib/api/health_api.dart
 lib/api/platforms_api.dart
 lib/api/songs_api.dart
 lib/api/users_api.dart
@@ -41,6 +43,7 @@ lib/auth/oauth.dart
 lib/model/agent.dart
 lib/model/bad_request_error.dart
 lib/model/conflict_error.dart
+lib/model/get_health200_response.dart
 lib/model/internal_server_error.dart
 lib/model/jwt_token.dart
 lib/model/login_input.dart
@@ -56,24 +59,5 @@ lib/model/unauthorized_error.dart
 lib/model/user.dart
 lib/model/user_input.dart
 pubspec.yaml
-test/agent_test.dart
-test/agents_api_test.dart
-test/bad_request_error_test.dart
-test/conflict_error_test.dart
-test/internal_server_error_test.dart
-test/jwt_token_test.dart
-test/login_input_test.dart
-test/not_found_error_test.dart
-test/platform_details_test.dart
-test/platform_input_test.dart
-test/platform_test.dart
-test/platforms_api_test.dart
-test/register_input_test.dart
-test/song_details_test.dart
-test/song_input_test.dart
-test/song_test.dart
-test/songs_api_test.dart
-test/unauthorized_error_test.dart
-test/user_input_test.dart
-test/user_test.dart
-test/users_api_test.dart
+test/get_health200_response_test.dart
+test/health_api_test.dart

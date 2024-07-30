@@ -70,6 +70,7 @@ Class | Method | HTTP request | Description
 *AgentsApi* | [**getAgentById**](doc//AgentsApi.md#getagentbyid) | **GET** /agents/{agentID} | Get an agent by ID
 *AgentsApi* | [**getAllAgents**](doc//AgentsApi.md#getallagents) | **GET** /agents | Get all agents
 *AgentsApi* | [**updateAgentById**](doc//AgentsApi.md#updateagentbyid) | **PUT** /agents/{agentID} | Update an agent by ID
+*HealthApi* | [**getHealth**](doc//HealthApi.md#gethealth) | **GET** /health | Get health status
 *PlatformsApi* | [**addPlatform**](doc//PlatformsApi.md#addplatform) | **POST** /platforms | Add a new platform
 *PlatformsApi* | [**deletePlatformById**](doc//PlatformsApi.md#deleteplatformbyid) | **DELETE** /platforms/{platformID} | Delete platform by ID
 *PlatformsApi* | [**getAllPlatformDetails**](doc//PlatformsApi.md#getallplatformdetails) | **GET** /platforms/details | Get platform details
@@ -96,6 +97,7 @@ Class | Method | HTTP request | Description
  - [Agent](doc//Agent.md)
  - [BadRequestError](doc//BadRequestError.md)
  - [ConflictError](doc//ConflictError.md)
+ - [GetHealth200Response](doc//GetHealth200Response.md)
  - [InternalServerError](doc//InternalServerError.md)
  - [JWTToken](doc//JWTToken.md)
  - [LoginInput](doc//LoginInput.md)

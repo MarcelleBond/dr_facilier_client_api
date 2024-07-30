@@ -29,6 +29,7 @@ part 'auth/http_basic_auth.dart';
 part 'auth/http_bearer_auth.dart';
 
 part 'api/agents_api.dart';
+part 'api/health_api.dart';
 part 'api/platforms_api.dart';
 part 'api/songs_api.dart';
 part 'api/users_api.dart';
@@ -36,6 +37,7 @@ part 'api/users_api.dart';
 part 'model/agent.dart';
 part 'model/bad_request_error.dart';
 part 'model/conflict_error.dart';
+part 'model/get_health200_response.dart';
 part 'model/internal_server_error.dart';
 part 'model/jwt_token.dart';
 part 'model/login_input.dart';

@@ -188,6 +188,8 @@ class ApiClient {
           return BadRequestError.fromJson(value);
         case 'ConflictError':
           return ConflictError.fromJson(value);
+        case 'GetHealth200Response':
+          return GetHealth200Response.fromJson(value);
         case 'InternalServerError':
           return InternalServerError.fromJson(value);
         case 'JWTToken':
