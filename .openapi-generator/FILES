@@ -9,6 +9,8 @@ doc/ConflictError.md
 doc/GetHealth200Response.md
 doc/HealthApi.md
 doc/InternalServerError.md
+doc/IpAddesses.md
+doc/IpaddressApi.md
 doc/JWTToken.md
 doc/LoginInput.md
 doc/NotFoundError.md
@@ -29,6 +31,7 @@ git_push.sh
 lib/api.dart
 lib/api/agents_api.dart
 lib/api/health_api.dart
+lib/api/ipaddress_api.dart
 lib/api/platforms_api.dart
 lib/api/songs_api.dart
 lib/api/users_api.dart
@@ -45,6 +48,7 @@ lib/model/bad_request_error.dart
 lib/model/conflict_error.dart
 lib/model/get_health200_response.dart
 lib/model/internal_server_error.dart
+lib/model/ip_addesses.dart
 lib/model/jwt_token.dart
 lib/model/login_input.dart
 lib/model/not_found_error.dart
@@ -59,5 +63,5 @@ lib/model/unauthorized_error.dart
 lib/model/user.dart
 lib/model/user_input.dart
 pubspec.yaml
-test/get_health200_response_test.dart
-test/health_api_test.dart
+test/ip_addesses_test.dart
+test/ipaddress_api_test.dart

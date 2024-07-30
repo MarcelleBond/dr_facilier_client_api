@@ -71,6 +71,10 @@ Class | Method | HTTP request | Description
 *AgentsApi* | [**getAllAgents**](doc//AgentsApi.md#getallagents) | **GET** /agents | Get all agents
 *AgentsApi* | [**updateAgentById**](doc//AgentsApi.md#updateagentbyid) | **PUT** /agents/{agentID} | Update an agent by ID
 *HealthApi* | [**getHealth**](doc//HealthApi.md#gethealth) | **GET** /health | Get health status
+*IpaddressApi* | [**addIPAddresses**](doc//IpaddressApi.md#addipaddresses) | **POST** /ipAddress | add new ip address
+*IpaddressApi* | [**deleteIPAddress**](doc//IpaddressApi.md#deleteipaddress) | **DELETE** /ipAddress | Delete ip address
+*IpaddressApi* | [**getIPAddresses**](doc//IpaddressApi.md#getipaddresses) | **GET** /ipAddress | Gets all ip addresses
+*IpaddressApi* | [**updateIPAddress**](doc//IpaddressApi.md#updateipaddress) | **PUT** /ipAddress | update ip address
 *PlatformsApi* | [**addPlatform**](doc//PlatformsApi.md#addplatform) | **POST** /platforms | Add a new platform
 *PlatformsApi* | [**deletePlatformById**](doc//PlatformsApi.md#deleteplatformbyid) | **DELETE** /platforms/{platformID} | Delete platform by ID
 *PlatformsApi* | [**getAllPlatformDetails**](doc//PlatformsApi.md#getallplatformdetails) | **GET** /platforms/details | Get platform details
@@ -99,6 +103,7 @@ Class | Method | HTTP request | Description
  - [ConflictError](doc//ConflictError.md)
  - [GetHealth200Response](doc//GetHealth200Response.md)
  - [InternalServerError](doc//InternalServerError.md)
+ - [IpAddesses](doc//IpAddesses.md)
  - [JWTToken](doc//JWTToken.md)
  - [LoginInput](doc//LoginInput.md)
  - [NotFoundError](doc//NotFoundError.md)

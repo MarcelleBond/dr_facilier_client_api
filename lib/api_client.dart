@@ -192,6 +192,8 @@ class ApiClient {
           return GetHealth200Response.fromJson(value);
         case 'InternalServerError':
           return InternalServerError.fromJson(value);
+        case 'IpAddesses':
+          return IpAddesses.fromJson(value);
         case 'JWTToken':
           return JWTToken.fromJson(value);
         case 'LoginInput':
